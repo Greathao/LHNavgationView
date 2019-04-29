@@ -34,7 +34,9 @@ typedef  void(^LHNavgationRightActionBlock)(UIView*view);
 @property (nonatomic,strong,readonly) NSArray <UIView*>*leftItems;
 ///右边按钮 对象组
 @property (nonatomic,strong,readonly) NSArray <UIView*>*rightItems;
- 
+///左边第一个按钮点击事件
+@property (nonatomic,copy) LHNavgationLeftActionBlock  cancalActionBlock; 
+
 /**
  titleView追加
  
